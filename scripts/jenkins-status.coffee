@@ -34,12 +34,10 @@ module.exports = (robot) ->
     request = new RSVP.Promise (resolve, reject) ->
       robot.http(build_url, options)
         .get() (err, res, body) ->
-          console.log 'starting first request'
           if err
             reject(err)
           else
             if res.statusCode == 401
-              console.log 'starting second request'
               method = "GET"
               www_authenticate = res.headers['www-authenticate']
               username = process.env.HUBOT_JENKINS_USERNAME
