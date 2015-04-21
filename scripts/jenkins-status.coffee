@@ -21,7 +21,7 @@ digest = require 'digest-header'
 RSVP = require 'rsvp'
 
 module.exports = (robot) ->
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+  # process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
   jenkins_url = process.env.HUBOT_JENKINS_URL
 
   robot.respond /jenkins status (.*)/i, (msg) ->
