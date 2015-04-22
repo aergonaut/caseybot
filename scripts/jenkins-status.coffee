@@ -12,7 +12,7 @@
 #   HUBOT_JENKINS_PASSWORD - Optional. Password for digest authentication.
 #
 # Commands:
-#   hubot jenkins satus <job> - get the status of a particular job
+#   hubot jenkins status <job> - get the status of a particular job
 #
 # Author:
 #   aergonaut
